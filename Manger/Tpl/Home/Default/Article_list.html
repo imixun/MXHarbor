@@ -1,0 +1,21 @@
+
+<div class="left">
+		<div class="pos"><b></b><span>{:L(catpos)} <a href="{:URL()}">{:L(home_font)}</a> &gt <YP:catpos  catid="catid" space=" &gt; " /></span></div>
+		<div class="list">
+		<ul class="txt">
+			<volist name="list" id="r">
+					<li><span class="date">[{$r.createtime|toDate=###,'Y-m-d'}]</span><a href="{$r.url}" target="_blank">{$r.title}</a></li>
+			</volist> 
+		</ul></div>
+
+		<div id="pages" class="page">{$pages}</div>
+		<br>
+</div>
+<div class="right">
+	<div class="box"><div class="b1 catlist">
+		<h3 class="tit"><span></span><b>地震科普</b><em>menu</em></h3>
+		<YP:nav  catid="1" level="2" id="catlist" />
+	</div></div>
+	<div class="c"></div>
+	<div class="h10"></div>
+</div>
